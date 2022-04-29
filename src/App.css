@@ -24,7 +24,7 @@ nav {
 
 nav h1 {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   font-size: 45px;
 }
@@ -60,7 +60,7 @@ nav h1 {
   place-items: center;
   font-size: 30px;
   font-weight: bolder;
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
