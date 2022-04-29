@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { AppContext } from "../../App";
 
 function Letters({ letterPosition, attemptValue }) {
-  const { board, correctWords, currentAttempt, setDisableLetters } =
+  const { board, correctWords, currentAttempt, disableLetters, setDisableLetters } =
     useContext(AppContext);
   const letters = board[attemptValue][letterPosition];
   // Check if letters are correct or not

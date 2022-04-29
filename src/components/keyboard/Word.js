@@ -15,7 +15,7 @@ export const createWordSet = async () => {
   let wordSets;
   let todaysWord;
   await fetch(wordleBank)
-    .then((response) => response.txt())
+    .then((response) => response.text())
     .then((result) => {
       const wordArray = result.split("\n");
       todaysWord = wordArray[Math.floor(Math.random() * wordArray.length)];
