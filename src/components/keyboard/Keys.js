@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../../App";
 
 //Register keyValue and largeKey
-function Keys({ keyValue, largeKey }) {
+function Keys({ keyValue, largeKey, disableKey }) {
   // Register Values for board on click function
   const {
     onDelete,
@@ -20,7 +20,7 @@ function Keys({ keyValue, largeKey }) {
     }
   };
   return (
-    <div className="keys" id={largeKey && "big"} onClick={selectLetters}>
+    <div className="keys" id={largeKey ? "big": disableKey && "disabled"} onClick={selectLetters}>
       {keyValue}
     </div>
   );
