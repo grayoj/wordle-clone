@@ -21,3 +21,7 @@ First Clone the repository, on you own local machine. By hitting
 Run `yarn add` to install dependencies that was used in the project
 
 Run `yarn start` to boot up the application, in development mode
+
+# For TypeScript
+
+Still in development mode.
