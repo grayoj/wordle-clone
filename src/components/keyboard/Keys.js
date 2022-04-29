@@ -4,33 +4,23 @@ import { AppContext } from "../../App";
 //Register keyValue and largeKey
 function Keys({ keyValue, largeKey }) {
   // Register Values for board on click function
-  const { board, setBoard, currentAttempt, setCurrentAttempt } =
-    useContext(AppContext);
+  const {
+    board,
+    setBoard,
+    currentAttempt,
+    setCurrentAttempt,
+    onDelete,
+    onSelectLetters,
+    onEnter,
+  } = useContext(AppContext);
   const selectLetters = () => {
     //Implement condition for largeKey (Enter) when clicked
     if (keyValue === "ENTER") {
-      if (currentAttempt.letterPosition !== 5) return;
-      setCurrentAttempt({
-        attempt: currentAttempt.attempt + 1,
-        letterPosition: 0,
-      });
+       onEnter() 
     } else if (keyValue === "DELETE") {
-      if (currentAttempt.letterPosition === 0) return;
-      const newBoard = [...board];
-      newBoard[currentAttempt.attempt][currentAttempt.letterPosition - 1] = "";
-      setBoard(newBoard);
-      setCurrentAttempt({...currentAttempt, letterPosition: currentAttempt.letterPosition - 1})
+        onDelete()
     } else {
-      if (currentAttempt.letterPosition > 4) return;
-      const newBoard = [...board];
-      newBoard[currentAttempt.attempt][currentAttempt.letterPosition] =
-        keyValue;
-      setBoard(newBoard);
-      //Increment on attempts
-      setCurrentAttempt({
-        ...currentAttempt,
-        letterPosition: (currentAttempt.letterPosition = +1),
-      });
+        onSelectLetters(keyValue)
     }
   };
   return (
