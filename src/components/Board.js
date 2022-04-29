@@ -6,6 +6,7 @@ import Letters from "./keyboard/Letters";
 function Board() {
   return (
     <div className="board">
+      {" "}
       <div className="row">
         <Letters letterPosition={0} attemptValue={0} />
         <Letters letterPosition={1} attemptValue={0} />
