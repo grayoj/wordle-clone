@@ -5,10 +5,6 @@ import { AppContext } from "../../App";
 function Keys({ keyValue, largeKey }) {
   // Register Values for board on click function
   const {
-    board,
-    setBoard,
-    currentAttempt,
-    setCurrentAttempt,
     onDelete,
     onSelectLetters,
     onEnter,
