@@ -24,4 +24,4 @@ Run `yarn start` to boot up the application, in development mode
 
 # For TypeScript
 
-Still in development mode.
+Still in development mode. Feel Free to make contributions.
