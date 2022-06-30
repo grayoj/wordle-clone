@@ -18,7 +18,7 @@ The root directory, is the react-app version in the standard JavaScript and JSX 
 First Clone the repository, on you own local machine. By hitting
 `git clone https://github.com/grayoj/wordle-clone.git `
 
-Run `yarn add` to install dependencies that was used in the project
+Run `yarn` to install dependencies that was used in the project
 
 Run `yarn start` to boot up the application, in development mode
 
