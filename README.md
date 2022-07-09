@@ -24,4 +24,4 @@ Run `yarn start` to boot up the application, in development mode
 
 # For TypeScript
 
-Still in development mode. Feel Free to make contributions.
+Still in development mode. Feel Free to make contributions. MIT License
