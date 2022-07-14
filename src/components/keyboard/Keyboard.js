@@ -19,17 +19,17 @@ function Keyboard() {
       onDelete();
     } else {
       keysOne.forEach((key) => {
-        if (event.key.toLowerCase() === key.toLowerCase) {
+        if (event.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetters(key);
         }
       });
       keysTwo.forEach((key) => {
-        if (event.key.toLowerCase() === key.toLowerCase) {
+        if (event.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetters(key);
         }
       });
       KeysThree.forEach((key) => {
-        if (event.key.toLowerCase() === key.toLowerCase) {
+        if (event.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetters(key);
         }
       });
